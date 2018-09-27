@@ -1,5 +1,5 @@
-import { ContatoModel } from './../modelos/contatos-model';
 import {EventEmitter, Injectable} from '@angular/core';
+import { ContatoModel } from './../modelos/contatos-model';
 
 @Injectable()
 export class ContatosDataBaseService{
