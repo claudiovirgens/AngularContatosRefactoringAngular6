@@ -1,6 +1,7 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { ContatoModel } from '../modelos/contatos-model';
 import { ContatosDataBaseService } from './../servicos/contatos-data-base.service';
+import { EventEmitter } from 'events';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { ContatosDataBaseService } from './../servicos/contatos-data-base.servic
 export class ListaUsuarioComponent implements OnInit {
 
   listaDeContatos: ContatoModel[] = [];
-  @Output() idClicado = new EventEmmitter();
+  @Output() idClicado = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
